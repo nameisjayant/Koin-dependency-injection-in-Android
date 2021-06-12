@@ -19,3 +19,4 @@ class DemoImpl : Demo{
 class Main constructor(private val demo:Demo){
     fun getDemo() = demo.getDemo()
 }
+

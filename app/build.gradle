@@ -50,4 +50,7 @@ dependencies {
     implementation "io.insert-koin:koin-androidx-viewmodel:$koin_version"
 // Koin AndroidX Fragment features
     implementation "io.insert-koin:koin-androidx-fragment:$koin_version"
+
+    // android ktx
+    implementation 'androidx.activity:activity-ktx:1.2.3'
 }
