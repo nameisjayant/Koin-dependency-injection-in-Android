@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         baseApp.main.getDemo()
         baseApp.singletonClass.getSingleton()
         mainViewModel.getDemo()
+        baseApp.mainUser.getAllUser()
 
 //        lifecycleScope.launchWhenStarted {
 //            mainViewModel.getPost().catch { e->
