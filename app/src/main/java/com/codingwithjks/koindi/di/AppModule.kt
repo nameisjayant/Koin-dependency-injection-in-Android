@@ -12,7 +12,6 @@ val appModule = module {
     factory { Wheel() }
     factory { Car(get(), get()) }
 
-
 }
 
 val interfaceModule = module {
