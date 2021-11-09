@@ -1,5 +1,6 @@
 package com.codingwithjks.koindi.container
 
+import com.codingwithjks.koindi.Qualifier.Users
 import com.codingwithjks.koindi.data.repository.MainRepository
 import com.codingwithjks.koindi.demo.car.`interface`.*
 import com.codingwithjks.koindi.demo.car.car.Car
@@ -26,6 +27,7 @@ class BaseApplication : KoinComponent {
     val demo:Demo by inject()
     val mainRepository:MainRepository by inject()
     val mainUser:MainUser by inject()
+    val users:Users by inject()
     /*
     eagerly initialisation
      */
