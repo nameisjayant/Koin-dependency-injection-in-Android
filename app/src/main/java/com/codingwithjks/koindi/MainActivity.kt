@@ -1,10 +1,9 @@
 package com.codingwithjks.koindi
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
-import androidx.lifecycle.ViewModelProvider
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.codingwithjks.koindi.container.BaseApplication
 import com.codingwithjks.koindi.data.model.User
@@ -13,15 +12,11 @@ import com.codingwithjks.koindi.ui.MainViewModel
 import com.codingwithjks.koindi.util.showMsg
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.collect
-import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import org.koin.core.component.KoinApiExtension
-import org.koin.core.context.startKoin
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding:ActivityMainBinding
     private val mainViewModel:MainViewModel by viewModel()
-    @KoinApiExtension
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)

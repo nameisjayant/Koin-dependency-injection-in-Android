@@ -27,6 +27,6 @@ val retrofitBuilderModule = module {
     single { provideMoshi() }
     single { provideApiService(get()) }
 
-    viewModel { RetrofitViewModel(get()) }
+    viewModel { RetrofitViewModel(get(),get()) }
 
 }

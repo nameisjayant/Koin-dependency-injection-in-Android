@@ -2,20 +2,22 @@ package com.codingwithjks.koindi.container
 
 import com.codingwithjks.koindi.Qualifier.Users
 import com.codingwithjks.koindi.data.repository.MainRepository
-import com.codingwithjks.koindi.demo.car.`interface`.*
+import com.codingwithjks.koindi.demo.car.`interface`.Demo
+import com.codingwithjks.koindi.demo.car.`interface`.DemoImpl
+import com.codingwithjks.koindi.demo.car.`interface`.Main
+import com.codingwithjks.koindi.demo.car.`interface`.MainUser
 import com.codingwithjks.koindi.demo.car.car.Car
 import com.codingwithjks.koindi.demo.car.car.Engine
 import com.codingwithjks.koindi.demo.car.car.Wheel
 import com.codingwithjks.koindi.demo.car.singleton.SingletonClass
-import com.codingwithjks.koindi.retrofit.ApiService
-import org.koin.core.component.KoinApiExtension
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.get
 import org.koin.core.component.inject
 
-@KoinApiExtension
-class BaseApplication : KoinComponent {
 
+class BaseApplication() : KoinComponent{
+
+   // override val scope: Scope  by lazy { newScope(this) }
     /*
     lazily initialisation
      */
